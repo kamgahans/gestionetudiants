@@ -1,0 +1,11 @@
+version: '2'
+services:
+  gestionetudiants-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/gestionEtudiants/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=gestionEtudiants
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432

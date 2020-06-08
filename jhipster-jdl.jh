@@ -1,0 +1,36 @@
+entity Etudiant {
+	matricule String required
+    nom String required
+    prenom String 
+    dateNaissance LocalDate required
+}
+
+entity Enseignant {
+	matricule String required
+    nom String required
+    prenom String 
+    dateNaissance LocalDate required
+}
+
+entity Cours {
+	code String required
+    libelle String required
+}
+
+entity Examen {
+	libelle String 
+    pourcentage String
+}
+
+relationship OneToMany {
+	Cours{Examen} to Examen{Cours}
+    Enseignant{Cours} to Cours{Enseignant}
+}
+
+relationship ManyToMany {
+	Etudiant{Cours} to Cours{Etudiant}
+}
+
+service * with serviceClass
+paginate Etudiant, Enseignant, Cours, Examen with pagination
+

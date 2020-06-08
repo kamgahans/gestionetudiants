@@ -1,0 +1,38 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.gestion.etudiant"
+    },
+    "jhipsterVersion": "6.9.0",
+    "applicationType": "monolith",
+    "baseName": "gestionEtudiants",
+    "packageName": "com.gestion.etudiant",
+    "packageFolder": "com/gestion/etudiant",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "MDYwMmI1N2M2Y2M4ODUwYWZjZmI3MzMyOTVkMWIwZWQzYWM1ZGM2ZDJhNmM3NDFlZWNhYTI5ODdjNGVmNTVmMWYxNjZjOTkzYTU4Mzg3MGQ5Y2YwYTFhZDY3MDg0OTNiMDM1YTA3OTBlM2RhMWU1NDBkZmEyMzk3OTFkMmVhNWQ=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "skipClient": true,
+    "creationTimestamp": 1591659240284,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "blueprints": []
+  }
+}
