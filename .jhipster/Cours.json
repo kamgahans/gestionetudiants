@@ -1,0 +1,53 @@
+{
+  "name": "Cours",
+  "fields": [
+    {
+      "fieldName": "code",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "libelle",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "examen",
+      "otherEntityRelationshipName": "cours",
+      "relationshipName": "examen"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "enseignant",
+      "otherEntityRelationshipName": "cours",
+      "relationshipName": "enseignant",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "etudiant",
+      "otherEntityRelationshipName": "cours",
+      "relationshipName": "etudiant",
+      "otherEntityField": "id",
+      "ownerSide": false
+    }
+  ],
+  "changelogDate": "20200608234136",
+  "entityTableName": "cours",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

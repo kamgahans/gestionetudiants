@@ -1,0 +1,37 @@
+{
+  "name": "Examen",
+  "fields": [
+    {
+      "fieldName": "libelle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "pourcentage",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "note",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "cours",
+      "otherEntityRelationshipName": "examen",
+      "relationshipName": "cours",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20200608234236",
+  "entityTableName": "examen",
+  "dto": "no",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}
