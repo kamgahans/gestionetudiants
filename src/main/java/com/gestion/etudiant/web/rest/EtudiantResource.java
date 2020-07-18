@@ -119,7 +119,7 @@ public class EtudiantResource {
     }
 
     /**
-     * {@code GET  /etudiants/:id} : get the "id" etudiant.
+     * {@code GET  /etudiants/:id} : get the "id" etudiant. 
      *
      * @param id the id of the etudiant to retrieve.
      * @return the {@link ResponseEntity} with status {@code 200 (OK)} and with body the etudiant, or with status {@code 404 (Not Found)}.
